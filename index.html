@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BLACKPINK</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .clear:after{
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+    .header-top{
+        border-bottom: 1px solid rgba(218,218,218,1);
+        height: 32px;
+        line-height: 32px;
+    }
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .header-info{
+        float: right; 
+    }
+    .header-info li{
+        float: left;
+        margin-left: 27px;
+    }
+    .iphone{
+        background: url(./web/iphone.png) no-repeat left center;
+        padding-left: 17px;
+    }
+    .weixin{
+        background: url(./web/weixin.png) no-repeat left center;
+        padding-left: 24px;
+    }
+    .header-info a{
+        font-size: 12px;
+        font-weight: 300;
+        color: rgba(0,0,0,1);
+    }
+    .logo{
+        float: left;
+        margin-top: 3px;
+        margin-left: 3px;
+        height: 25px;
+    }
+    .nav{
+        float: left;
+        margin-top: 15px;
+    }
+    .form{
+        float: right;
+        margin-top: 8px;
+    }
+    .nav li{
+        float: left;
+        width: 122px;
+        text-align: center;
+        border-right: 1px solid black;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .nav a{
+        color: rgba(0,0,0,1);
+    }
+    .header-bottom{
+        height: 25px;
+    }
+    .header-bottom p{
+        margin-left: 500px;
+        margin-top: 12px;
+    }
+    .body-two{
+        height: 80px;
+    }
+    .first{
+        margin-left: 40px;
+    }
+    .search{
+        float: left;
+        width: 145px;
+        padding: 9px;
+        border: 1px solid rgba(242,156,177,1);
+    }
+    .submit{
+        float: left;
+        width: 36px;
+        height: 36px;
+        background:rgba(242,156,177,1) url(./web/search.png) no-repeat center center;
+        border: 1px solid rgba(242,156,177,1);
+        margin-right: 32px;
+    }
+    .banner{
+        height: 550px;
+        position: relative;
+    }
+    .banner li{
+        width: 100%;
+        height: 550px;
+        position: absolute;
+    }
+    .banner-one{
+        background: url(./web/img-e96a50769fd4f8d8247aee0e9b1dc210.jpg) no-repeat center center;
+    }
+    .prev,
+    .next{
+        position: absolute;
+        width: 106px;
+        height: 106px;
+        top: 220px;
+        left: 8%
+    }
+    .next{
+        left: auto;
+        right: 8%
+    }
+    .wen-one{
+        font-size: 20px;
+        font-weight: 300;
+        color: rgba(0,0,0,1);
+        margin-left: 70px;
+        margin-right: 30px;
+    }
+    .wen-two{
+        font-size: 16px;
+        font-weight: 300;
+        color: rgba(0,0,0,1);
+        margin-top: 15px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .wen-three{
+        font-size: 20px;
+        font-weight: 300;
+        color: rgba(0,0,0,1);
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+    .body-one{
+        height: 200px;
+        
+    }
+    .body-three{
+        height: 30px;
+        margin-left: 50px;
+    }
+    .ad{
+        height: 650px;
+        width: 100%;
+    }
+    .product-one{
+        float: left;
+    }
+    .product-one li{
+        float: left;
+        position: relative;
+        font-size: 14px;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    .product-one li div{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 45px;
+        background:rgba(242,156,177,0.6);
+        text-align: center;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .product img{
+        vertical-align: bottom;
+    }
+    .body-four{
+        height: 40px;
+    }
+    .body-four a{
+        font-size: 12px;
+        font-weight: 300;
+        color: rgba(0,0,0,1);
+        float: right;
+        margin-right: 60px;
+    }
+    .pro-one img{
+        height: 200px;
+    }
+    .pro-one{
+        float: left;
+    }
+    .pro-one li{
+        float: left;
+        position: relative;
+        margin-top: 20px;
+        margin-left: 60px;
+    }
+    .pro-one div{
+        float: left;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 45px;
+        background:rgba(0,0,0,0.6);
+        color: white;
+    }
+    .pro-one img{
+        vertical-align: bottom;
+    }
+    .pro-one p{
+        font-size: 14px;
+    }
+    .fin{
+        height: 200px;
+        background-color: gray
+    }
+    .fin-one{
+        font-size: 16px;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .fin-two{
+        margin-top: 20px;
+        margin-left: 380px;
+    }
+    .fin-two li{
+        float: left;
+        width: 120px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .fin-two a{
+        color: rgba(0,0,0,1);
+    }
+    a:hover{
+        color: orange;
+    }
+    .fin-five{
+        text-align: center;
+        font-size: 12px;
+        background-color: gray;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="container clear">
+            <img src="./web/u=3949326233,2215502775&fm=26&gp=0.jpg" alt="BlackPink" class="logo"/>
+            <ul class="header-info clear">
+                <li><a href="#">登录/注册</a></li>
+                <li class="iphone"><a href="#">移动客户端</a></li>
+                <li class="weixin"><a href="#">微信</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <p><strong>BLACKPINK IN YOUR AREA</strong></p>
+        </div>
+    </div>
+    <div class="banner">
+        <ul>
+            <li class="banner-one"></li>
+        </ul>
+        <img src="./web/1592080545724.png" alt="上一页" class="prev"/>
+        <img src="./web/1592080545723.png" alt="下一页" class="next">
+    </div>
+    <div class="body-two clear">
+        <ul class="nav clear">
+            <li class="first"><a href="#">打歌舞台</a></li>
+            <li><a href="#">团综</a></li>
+            <li><a href="#">杂志写真</a></li>
+            <li><a href="#" class="last">官方周边</a></li>
+        </ul>
+        <form class="form clear">
+            <input type="text" placeholder="成员/代表作品" class="search">
+            <input type="button" class="submit">
+        </form>
+    </div>
+    <div class="body-one">
+        <ul>
+            <li class="wen-one"><strong>组合介绍</strong></li>
+            <li class="wen-two">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BLACKPINK，韩国女子演唱组合，由金智秀（JISOO）、金智妮（JENNIE）、朴彩英（ROSÉ）、LISA四名成员组成。组合名字“BLACKPINK”在看起来很美的粉色中稍微加入了否定的意义，旨在传达出“不要只看漂亮的部分”、“看到的并不是全部”的意思。2016年8月8日发行首张单曲专辑《SQUARE ONE》并正式出道，单曲专辑在印尼、马来西亚等十四个国家的iTunes的专辑榜夺得冠军，《WHISTLE》在八个音乐网站周排行榜冠军，是首个以出道曲创下这纪录的女团；8月21日凭《WHISTLE》获得《人气歌谣》一位，创下韩国女团最快获得一位的纪录。2017年6月22日发布单曲《As If It’s Your Last》。2018年6月5日，YG娱乐官方公开BLACKPINK迷你专辑《SQUARE UP》；9月23日发行单曲《So Hot》。10月25日发行与Dua Lipa的合作单曲《Kiss and Make Up》，并收录于专辑《Dua Lipa》中。2019年4月5日发行专辑《KILL THIS LOVE》。2020年5月28日发行与Lady Gaga的合作单曲《Sour Candy》。</li>
+        </ul>
+    </div>
+    <div class="body-three">
+        <p class="wen-three"><strong>成员介绍</strong></p>
+    </div>
+    <hr/>
+    <div class="ad">
+        <div class="container clear product">
+            <ul class="product-one clear">
+                <li class="product-item" class="je">
+                <img src="./web/img-79a3c8ba2986a81dfb20f1301dae6589.jpg" alt="Jennie" width="450px" height="280px" />
+               <div class="product-info ">
+                    <h3>金智妮 Jennie</h3>
+                    <p>Rapper、Main Vocal </p>
+                </div>
+                </li>
+                <li class="product-item" class="ji">
+                <img src="./web/v2-21da9e0640162761438ed161437f1e97.jpg" alt="Rosé" width="450px" height="280px"/>
+                <div class="product-info">
+                    <h3>朴彩英 Rosé</h3>
+                    <p>Main Vocal </p>
+                </div>
+                </li>
+                <li class="product-item" class="je">
+                <img src="./web/img-bc5f211043431b5b40ed293af07e4bfc.jpg" alt="Jisoo" width="450px" height="320px" />
+                <div class="product-info">
+                    <h3>金智秀 Jisoo</h3>
+                    <p>主唱、门面担当</p>
+                </div>
+                </li>
+                <li class="product-item" class="ji">
+                <img src="./web/img-9a8d4ec2c239ee88fbde75b7f524e95e.jpg" alt="LISA" width="450px" height="320px" />
+                <div class="product-info">
+                    <h3>LISA Lalisa Manoban</h3>
+                    <p>主领舞、Rapper </p>
+                </div>
+                </li>  
+            </ul>
+        </div>
+    </div>
+    <div class="body-four">
+        <p class="wen-one"><strong>专辑</strong></p>
+        <p class="wen-b"><a href="#">更多>></a></p>
+    </div>
+    <hr/>
+    <div class="ad-one">
+        <div class="container clear pro">
+            <ul class="pro-one">
+                <li class="pro-two">
+                    <img src="./web/1592039166027.jpg" alt="">
+                    <div class="pro-info">
+                        <h3>SQUARE ONE</h3>
+                        <p>2016-08-08</p>
+                    </div>
+                </li>
+                <li class="pro-two">
+                    <img src="./web/1592039200954.jpg" alt="">
+                    <div class="pro-info">
+                        <h3>SQUARE UP</h3>
+                        <p>2018-06-15</p>
+                    </div>
+                </li>
+                <li class="pro-two">
+                    <img src="./web/1592039129349.jpg" alt="">
+                    <div class="pro-info">
+                        <h3>KILL THIS LOVE</h3>
+                        <p>2019-04-04</p>
+                    </div>
+                </li>
+                <li class="pro-two">
+                    <img src="./web/1592039109273.jpg" alt="">
+                    <div class="pro-info">
+                        <h3>Sour Candy</h3>
+                        <p>2020-05-28</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="fin">
+        <p class="fin-one">关于BlackPink</p>
+        <div class="fin-four">
+        <ul class="fin-two">
+            <li><a href="#">YG官网</a></li>
+            <li><a href="#">后援会</a></li>
+            <li><a href="#">反黑站</a></li>
+            <li><a href="#">应援站</a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="fin-five">
+            <p class="fin-three">所有素材都源于网络</p>
+    </div>
+</body>
+
+</html>
